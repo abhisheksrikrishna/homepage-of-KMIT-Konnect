@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+    <header class="text-gray-700 body-font">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+          <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+            width="64" height="64"
+            viewBox="0 0 172 172"
+            style=" fill:#000000;"><g transform=""><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><path d="M86,172c-47.49649,0 -86,-38.50351 -86,-86v0c0,-47.49649 38.50351,-86 86,-86h0c47.49649,0 86,38.50351 86,86v0c0,47.49649 -38.50351,86 -86,86z" fill="#d2bd27"></path>
+                <g><path d="M80.16061,142.85246c3.21855,-3.139 8.46024,-3.139 11.67879,0c3.4873,3.4013 8.25384,5.49754 13.51059,5.49754c8.42369,0 15.57028,-5.39219 18.22768,-12.90429c0.0172,0 0.03225,0.0043 0.0473,0.0043c5.34274,0 9.67499,-4.33225 9.67499,-9.67499c0,-1.30075 -0.26445,-2.537 -0.731,-3.6679c6.58544,-1.60605 11.48099,-7.52714 11.48099,-14.60709c0,-2.62085 -0.67295,-5.08474 -1.85115,-7.23259c3.7238,-2.7391 6.15114,-7.14014 6.15114,-12.11739c0,-7.14659 -4.98585,-13.11499 -11.66374,-14.65439c1.89845,-2.09625 3.06375,-4.86975 3.06375,-7.92059c0,-6.53169 -5.29329,-11.82499 -11.82499,-11.82499c-0.0774,0 -0.1548,0.01075 -0.2322,0.01075c1.1696,-2.279 1.6383,-4.9794 1.0578,-7.82599c-0.93095,-4.558 -4.63325,-8.24524 -9.19554,-9.14824c-2.84875,-0.5633 -5.54914,-0.086 -7.82384,1.09865c0.18705,-1.80815 0.01075,-3.72165 -0.7095,-5.70394c-1.59315,-4.386 -5.52549,-7.69699 -10.14154,-8.38284c-4.1065,-0.6106 -7.91844,0.71595 -10.65539,3.2035c-2.38005,2.1629 -6.07159,2.1629 -8.45164,0c-2.73695,-2.48755 -6.54674,-3.8141 -10.65539,-3.2035c-4.61605,0.68585 -8.54839,3.99685 -10.14154,8.38284c-0.72025,1.9823 -0.8944,3.8958 -0.7095,5.70394c-2.2747,-1.1825 -4.9751,-1.66195 -7.82384,-1.09865c-4.56445,0.90515 -8.26674,4.59025 -9.19554,9.14824c-0.5805,2.84875 -0.1118,5.54699 1.0578,7.82599c-0.07525,0 -0.15265,-0.01075 -0.23005,-0.01075c-6.53169,0 -11.82499,5.29329 -11.82499,11.82499c0,3.05085 1.1653,5.82434 3.06375,7.92059c-6.67789,1.5394 -11.66374,7.50779 -11.66374,14.65439c0,4.97725 2.42735,9.37829 6.15114,12.11739c-1.1782,2.14785 -1.85115,4.61175 -1.85115,7.23259c0,7.07994 4.89555,13.00104 11.48099,14.60709c-0.46655,1.1309 -0.731,2.36715 -0.731,3.6679c0,5.34274 4.33225,9.67499 9.67499,9.67499c0.0172,0 0.03225,-0.0043 0.0473,-0.0043c2.6574,7.51209 9.80399,12.90429 18.22768,12.90429c5.25674,0 10.02329,-2.09625 13.51059,-5.49754z" fill="#c2cde7"></path>
+                    <path d="M148.34994,88.15006c0,-7.14659 -4.98585,-13.11499 -11.66374,-14.65439c1.89845,-2.09625 3.06375,-4.86975 3.06375,-7.92059c0,-6.53169 -5.29329,-11.82499 -11.82499,-11.82499c-0.0774,0 -0.1548,0.01075 -0.2322,0.01075c1.1696,-2.279 1.6383,-4.9794 1.0578,-7.82599c-0.93095,-4.558 -4.63325,-8.24524 -9.19554,-9.14824c-2.84875,-0.5633 -5.54914,-0.08385 -7.82384,1.09865c0.18705,-1.80815 0.01075,-3.72165 -0.7095,-5.70394c-1.59315,-4.386 -5.52549,-7.69699 -10.14154,-8.38284c-4.1065,-0.6106 -7.91844,0.71595 -10.65539,3.2035c-1.18895,1.08145 -2.70685,1.6211 -4.22475,1.6211v111.87299c2.1156,0 4.2312,0.78475 5.83939,2.35425c3.4873,3.40345 8.25384,5.49969 13.51059,5.49969c8.42369,0 15.57028,-5.39219 18.22768,-12.90429c0.0172,0 0.03225,0.0043 0.0473,0.0043c5.34274,0 9.67499,-4.33225 9.67499,-9.67499c0,-1.30075 -0.26445,-2.537 -0.731,-3.6679c6.58544,-1.60605 11.48099,-7.52714 11.48099,-14.60709c0,-2.62085 -0.67295,-5.08474 -1.85115,-7.23259c3.7238,-2.7391 6.15114,-7.14014 6.15114,-12.11739z" fill="#b5c4e0"></path><path d="M62.35002,51.6001c-3.56223,0 -6.44999,2.88776 -6.44999,6.44999c0,3.56223 2.88776,6.44999 6.44999,6.44999c3.56223,0 6.44999,-2.88776 6.44999,-6.44999c0,-3.56223 -2.88776,-6.44999 -6.44999,-6.44999zM107.49998,51.6001c-3.56223,0 -6.44999,2.88776 -6.44999,6.44999c0,3.56223 2.88776,6.44999 6.44999,6.44999c3.56223,0 6.44999,-2.88776 6.44999,-6.44999c0,-3.56223 -2.88776,-6.44999 -6.44999,-6.44999zM118.24997,79.55007c-3.56223,0 -6.44999,2.88776 -6.44999,6.44999c0,3.56223 2.88776,6.44999 6.44999,6.44999c3.56223,0 6.44999,-2.88776 6.44999,-6.44999c0,-3.56223 -2.88776,-6.44999 -6.44999,-6.44999zM105.34998,109.65004c-3.56223,0 -6.44999,2.88776 -6.44999,6.44999c0,3.56223 2.88776,6.44999 6.44999,6.44999c3.56223,0 6.44999,-2.88776 6.44999,-6.44999c0,-3.56223 -2.88776,-6.44999 -6.44999,-6.44999zM66.65002,109.65004c-3.56223,0 -6.44999,2.88776 -6.44999,6.44999c0,3.56223 2.88776,6.44999 6.44999,6.44999c3.56223,0 6.44999,-2.88776 6.44999,-6.44999c0,-3.56223 -2.88776,-6.44999 -6.44999,-6.44999zM53.75003,79.55007c-3.56223,0 -6.44999,2.88776 -6.44999,6.44999c0,3.56223 2.88776,6.44999 6.44999,6.44999c3.56223,0 6.44999,-2.88776 6.44999,-6.44999c0,-3.56223 -2.88776,-6.44999 -6.44999,-6.44999z" fill="#f9e3ae"></path>
+                    <g fill="#8d6c9f"><path d="M83.85,49.4501h4.3c1.18895,0 2.15,-0.9632 2.15,-2.15c0,-1.1868 -0.96105,-2.15 -2.15,-2.15h-4.3c-1.18895,0 -2.15,0.9632 -2.15,2.15c0,1.1868 0.96105,2.15 2.15,2.15zM83.85,38.70011h4.3c1.18895,0 2.15,-0.9632 2.15,-2.15c0,-1.1868 -0.96105,-2.15 -2.15,-2.15h-4.3c-1.18895,0 -2.15,0.9632 -2.15,2.15c0,1.1868 0.96105,2.15 2.15,2.15zM88.15,70.95008c1.18895,0 2.15,-0.9632 2.15,-2.15c0,-1.1868 -0.96105,-2.15 -2.15,-2.15h-4.3c-1.18895,0 -2.15,0.9632 -2.15,2.15c0,1.1868 0.96105,2.15 2.15,2.15zM88.15,88.15006h-4.3c-1.18895,0 -2.15,0.9632 -2.15,2.15c0,1.1868 0.96105,2.15 2.15,2.15h4.3c1.18895,0 2.15,-0.9632 2.15,-2.15c0,-1.1868 -0.96105,-2.15 -2.15,-2.15zM88.15,98.90005h-4.3c-1.18895,0 -2.15,0.9632 -2.15,2.15c0,1.1868 0.96105,2.15 2.15,2.15h4.3c1.18895,0 2.15,-0.9632 2.15,-2.15c0,-1.1868 -0.96105,-2.15 -2.15,-2.15zM88.15,109.65004h-4.3c-1.18895,0 -2.15,0.9632 -2.15,2.15c0,1.1868 0.96105,2.15 2.15,2.15h4.3c1.18895,0 2.15,-0.9632 2.15,-2.15c0,-1.1868 -0.96105,-2.15 -2.15,-2.15zM88.15,120.40003h-4.3c-1.18895,0 -2.15,0.9632 -2.15,2.15c0,1.1868 0.96105,2.15 2.15,2.15h4.3c1.18895,0 2.15,-0.9632 2.15,-2.15c0,-1.1868 -0.96105,-2.15 -2.15,-2.15zM88.15,131.15002h-4.3c-1.18895,0 -2.15,0.9632 -2.15,2.15c0,1.1868 0.96105,2.15 2.15,2.15h4.3c1.18895,0 2.15,-0.9632 2.15,-2.15c0,-1.1868 -0.96105,-2.15 -2.15,-2.15z"></path><path d="M145.96344,104.7846c-0.0602,-0.3827 -0.13115,-0.7611 -0.2193,-1.1395c-0.0688,-0.30315 -0.14405,-0.60415 -0.2279,-0.903c-0.08815,-0.3053 -0.19135,-0.60415 -0.2967,-0.90515c-0.1118,-0.3225 -0.21715,-0.64715 -0.3483,-0.9632c-0.00215,-0.00645 -0.0043,-0.0129 -0.00645,-0.01935c3.5561,-3.2379 5.63514,-7.86899 5.63514,-12.70434c0,-5.83079 -2.90035,-11.01874 -7.46479,-14.14269c-0.04515,-0.03655 -0.0688,-0.086 -0.1161,-0.11825c-0.08385,-0.0559 -0.1763,-0.0989 -0.26015,-0.15265c-0.2752,-0.17845 -0.5633,-0.33755 -0.84925,-0.4988c-0.3999,-0.2279 -0.80625,-0.44075 -1.2212,-0.6321c-0.15695,-0.0731 -0.2967,-0.1677 -0.4558,-0.2365c1.15025,-2.06615 1.7673,-4.3989 1.7673,-6.79399c0,-6.75529 -4.816,-12.40549 -11.19719,-13.69764c0.5375,-2.05755 0.5934,-4.21615 0.15265,-6.37044c-1.10295,-5.40724 -5.47604,-9.75884 -10.88329,-10.82954c-0.9073,-0.17845 -1.8146,-0.25585 -2.71545,-0.26015c-0.0301,
+                        -0.00215 -0.05375,-0.0172 -0.0817,-0.0172c-0.04515,0 -0.086,0.0086 -0.13115,0.0086c-0.59555,0.0043 -1.1868,0.043 -1.7716,0.12255c-0.1677,0.02365 -0.3311,0.0645 -0.49665,0.0946c-0.31175,0.05375 -0.6235,0.0989 -0.9288,0.17415c-0.13545,-1.1352 -0.4042,-2.25535 -0.8041,-3.354c-1.86835,-5.14709 -6.51879,-8.98269 -11.84434,-9.77604c-4.53435,-0.6751 -9.06009,0.688 -12.41624,3.73885c-1.5566,1.41685 -3.999,1.419 -5.55989,0c-3.3583,-3.0487 -7.88189,-4.4161 -12.41839,-3.7367c-5.32554,0.79335 -9.97599,4.62895 -11.84434,9.77389c-0.40205,1.09865 -0.66865,2.22095 -0.8041,3.35615c-1.98015,-0.48805 -4.05275,-0.5332 -6.12749,-0.1247c-5.40939,1.0707 -9.78249,5.42229 -10.88329,10.82739c-0.44075,2.1543 -0.38485,4.31505 0.15265,6.37259c-6.38119,1.29215 -11.19719,6.94234 -11.19719,13.69764c0,2.3951 0.61705,4.72785 1.76945,6.79184c-0.00645,0.00215 -0.01075,0.00645 -0.0172,0.0086c-0.66865,0.29025 -1.31365,0.62995 -1.94145,1.0062c-0.15695,0.09245 -0.31175,0.18275 -0.46655,0.2795c-0.57405,0.36765 -1.1352,0.7611 -1.66625,1.1997c-0.2236,0.18275 -0.4257,0.38485 -0.63855,0.57835c-0.2021,0.18275 -0.41065,0.35475 -0.60415,0.54825c-0.0301,0.0301 -0.04085,0.0731 -0.0688,0.10535c-3.0874,3.12395 -4.9665,7.37879 -4.9665,12.05719c0,4.83535 2.07905,9.46644 5.63514,12.70864c-0.01075,0.0258 -0.0172,0.0516 -0.02795,0.0774c-0.0774,0.18705 -0.13545,0.38055 -0.2064,0.5719c-0.17845,0.47945 -0.3354,0.9632 -0.47085,1.45555c-0.0344,0.1247 -0.08815,0.24295 -0.11825,0.36765c-0.01075,0.043 0.00215,0.0817 -0.00645,0.1247c-0.32035,1.3201 -0.50525,2.67675 -0.50525,4.04415c0,7.18529 4.4118,13.48694 10.96929,16.01963c-0.0043,0.01935 -0.00215,0.0387 -0.00645,0.0559c-0.13545,0.7138 -0.21285,1.44695 -0.21285,2.19945c0,5.97699 4.45695,10.93274 10.36299,11.70889c3.37335,7.84104 11.13054,13.01609 19.73698,13.01609c5.64159,0 10.97359,-2.16935 15.01128,-6.10814c2.39295,-2.3349 6.28229,-2.3349 8.67524,0c4.03985,3.9388 9.37184,6.10814 15.01343,6.10814c8.59569,0 16.34858,-5.16214 19.72408,-12.98814c5.83939,-0.7181 10.37589,-5.70609 10.37589,-11.73684c0,-0.7611 -0.0731,-1.5136 -0.2193,-2.25535c6.55749,-2.5327 10.96929,-8.83434 10.96929,-16.01963c0,-0.6579 -0.04945,-1.31365 -0.1247,-1.96725c-0.02795,-0.25155 -0.0731,-0.4988 -0.1118,-0.7482zM62.35002,53.7501c2.37145,
+                        0 4.3,1.92855 4.3,4.3c0,2.37145 -1.92855,4.3 -4.3,4.3c-2.37145,0 -4.3,-1.92855 -4.3,-4.3c0,-2.37145 1.92855,-4.3 4.3,-4.3zM105.34998,120.40003c-2.37145,0 -4.3,-1.92855 -4.3,-4.3c0,-2.37145 1.92855,-4.3 4.3,-4.3c2.37145,0 4.3,1.92855 4.3,4.3c0,2.37145 -1.92855,4.3 -4.3,4.3zM132.06155,120.01733c-0.6106,0.14835 -1.1223,0.5547 -1.40825,1.1137c-0.2838,0.559 -0.31175,1.2126 -0.07095,1.7931c0.37625,0.91805 0.5676,1.87695 0.5676,2.8509c0,4.1495 -3.37335,7.52499 -7.43684,7.52499h-0.00215c-0.9847,-0.05375 -1.8404,0.5246 -2.16075,1.42975c-2.18655,6.17479 -7.68194,10.49199 -14.05024,11.30254v-21.63758c3.698,-0.96105 6.44999,-4.3 6.44999,-8.29469c0,-4.7429 -3.8571,-8.59999 -8.59999,-8.59999c-4.7429,0 -8.59999,3.8571 -8.59999,8.59999c0,3.9947 2.752,7.33364 6.44999,8.29469v21.65693c-3.70445,-0.46225 -7.14659,-2.09195 -9.85989,-4.7386c-2.02315,-1.9737 -4.6827,-2.9627 -7.34009,-2.9627c-2.6574,0 -5.31694,0.98685 -7.34009,2.9627c-2.71115,2.6445 -6.15544,4.27635 -9.85989,4.7386v-14.90164c0,-1.1868 -0.96105,-2.15 -2.15,-2.15c-1.18895,0 -2.15,0.9632 -2.15,2.15v14.88014c-6.36829,-0.81055 -11.86584,-5.12774 -14.05024,-11.30254c-0.3182,-0.8987 -1.2083,-1.46845 -2.14785,-1.4276c-4.1151,-0.04085 -7.45189,-3.4013 -7.45189,-7.52499c0,-0.50095 0.05375,-0.99115 0.14835,-1.46415c0.0946,-0.46655 0.2322,-0.92665 0.4171,-1.376c1.12445,-2.7434 3.81625,-4.68485 6.95954,-4.68485c0.6106,0 1.2126,0.0731 1.79525,0.215c1.1567,0.2838 2.3177,-0.4214 2.59935,-1.5738c0.2838,-1.15455 -0.41925,-2.3177 -1.5738,-2.6015c-0.9159,-0.22575 -1.8662,-0.3397 -2.8208,-0.3397c-4.2097,0 -7.90554,2.2188 -9.99964,5.54269c-4.9364,-1.88985 -8.27534,-6.59404 -8.27534,-11.99269c0,-1.07715 0.13545,-2.14785 0.40205,-3.1863c0.13545,-0.53535 0.30745,-1.05995 0.50955,-1.5695c0.09245,-0.23435 0.215,-0.45795 0.3225,-0.688c0.65575,-1.4018 1.53725,-2.6961 2.6617,-3.79475c0.8514,-0.82775 0.86645,-2.19085 0.0387,-3.0401c-0.8256,-0.8471 -2.19085,-0.86645 -3.0401,-0.0387c-0.58695,0.5719 -1.1266,1.1825 -1.6211,1.82535c-2.2833,-2.37575 -3.5733,-5.49324 -3.5733,-8.85799c0,-3.6593 1.5265,-6.98319 4.02695,-9.34819c0.1462,-0.13975 0.2967,-0.2752 0.44935,-0.40635c0.44505,-0.3827 0.90945,-0.7482 1.4104,-1.06855c0.0645,-0.043 0.1333,-0.07955 0.19995,-0.1204c1.18035,-0.72885 2.49185,
+                        -1.28785 3.91085,-1.61465c0.00645,-0.00215 0.0129,-0.00645 0.01935,-0.00645c0.93525,-0.21285 1.89845,-0.3354 2.88315,-0.3354c1.3072,0 2.59935,0.19565 3.83775,0.5805c1.13735,0.35905 2.3392,-0.28165 2.6918,-1.4147c0.3526,-1.13305 -0.28165,-2.3392 -1.4147,-2.6918c-1.65335,-0.51385 -3.37335,-0.774 -5.11484,-0.774c-0.83635,0 -1.6598,0.07955 -2.47465,0.19565c-1.16315,-1.6297 -1.82535,-3.55825 -1.82535,-5.57064c0,-5.33414 4.34085,-9.67499 9.64059,-9.67499c0.043,0.00215 0.1935,0.01075 0.23435,0.01075c0.6966,0 1.4577,-0.3741 1.85545,-1.01695c0.3999,-0.6407 0.43,-1.44265 0.086,-2.11345c-1.01695,-1.98015 -1.31365,-4.19895 -0.86215,-6.41559c0.7611,-3.7281 3.7797,-6.73164 7.50779,-7.46909c2.2274,-0.4386 4.4376,-0.129 6.41344,0.89655c0.29025,0.15265 0.6063,0.215 0.92235,0.22575v9.73734c-3.698,0.96105 -6.44999,4.3 -6.44999,8.29469c0,4.7429 3.8571,8.59999 8.59999,8.59999c4.7429,0 8.59999,-3.8571 8.59999,-8.59999c0,-3.9947 -2.752,-7.33364 -6.44999,-8.29469v-19.59078c1.67485,-2.2489 4.1753,-3.82915 6.93804,-4.23765c3.25295,-0.48375 6.49299,0.4902 8.89024,2.66815c3.182,2.8896 8.16354,2.8896 11.34554,0c2.39725,-2.17795 5.64159,-3.14975 8.89024,-2.666c3.7883,0.5633 7.09929,3.3067 8.43874,6.98964c0.4343,1.19755 0.645,2.43165 0.6407,3.67865c-2.1156,1.35235 -3.87,3.27875 -5.02884,5.65019c-0.5203,1.0664 -0.07955,2.35425 0.98685,2.87455c0.3053,0.14835 0.62565,0.2193 0.9417,0.2193c0.7955,0 1.5609,-0.4429 1.93285,-1.20615c0.94815,-1.9393 2.47465,-3.4357 4.3043,-4.36665c0.4601,-0.23435 0.9331,-0.43215 1.4147,-0.5891c0.02365,-0.0086 0.04515,-0.0172 0.0688,-0.0258c1.5566,-0.4945 3.21425,-0.5848 4.86975,-0.258c3.7281,0.73745 6.74669,3.741 7.50779,7.47124c0.4515,2.2145 0.15265,4.4333 -0.86215,6.41344c-0.344,0.6708 -0.3139,1.4749 0.086,2.11345c0.3999,0.64285 1.13305,1.0363 1.85545,1.01695l0.2064,-0.01075c5.33414,0 9.67499,4.34085 9.67499,9.67499c0,2.021 -0.66865,3.95815 -1.84255,5.59644c-2.87025,-0.4128 -5.83509,-0.13975 -8.56344,0.8944c-1.1094,0.4214 -1.66625,1.6641 -1.24485,2.7735c0.41925,1.11155 1.6641,1.6641 2.7735,1.247c2.3951,-0.9116 5.04389,-1.05565 7.53359,-0.47945c0.645,0.1505 1.26205,0.35905 1.85975,0.5977c0.16125,0.0645 0.3182,0.13545 0.47515,0.2064c0.473,0.2107 0.9288,0.44935 1.3674,0.7138c0.13545,0.0817 0.2752,
+                        0.15265 0.40635,0.23865c3.56685,2.31985 5.83509,6.30809 5.83509,10.78654c0,3.3669 -1.29215,6.48869 -3.5776,8.86874c-1.2298,-1.59315 -2.73265,-2.99495 -4.5021,-4.10435c-1.00405,-0.62565 -2.3306,-0.32465 -2.96485,0.68155c-0.62995,1.0062 -0.32465,2.33275 0.6794,2.9627c1.9006,1.18895 3.4185,2.8079 4.4591,4.68915c0.0086,0.0172 0.0086,0.03655 0.0172,0.05375c0.7783,1.419 1.2814,2.97775 1.48565,4.58165c0.06665,0.53105 0.1032,1.0707 0.1032,1.6168h-21.49998v-13.20529c3.698,-0.96105 6.44999,-4.3 6.44999,-8.29469c0,-4.7429 -3.8571,-8.59999 -8.59999,-8.59999c-4.7429,0 -8.59999,3.8571 -8.59999,8.59999c0,3.9947 2.752,7.33364 6.44999,8.29469v13.20529c0,2.37145 1.92855,4.3 4.3,4.3h20.76468c-1.41685,4.0119 -4.77085,7.15949 -9.10309,8.21729zM118.24997,90.30006c-2.37145,0 -4.3,-1.92855 -4.3,-4.3c0,-2.37145 1.92855,-4.3 4.3,-4.3c2.37145,0 4.3,1.92855 4.3,4.3c0,2.37145 -1.92855,4.3 -4.3,4.3z"></path><path d="M116.09997,58.05009c0,-4.7429 -3.8571,-8.59999 -8.59999,-8.59999c-3.99685,0 -7.33364,2.752 -8.29469,6.44999h-15.35528c-1.18895,0 -2.15,0.9632 -2.15,2.15c0,1.1868 0.96105,2.15 2.15,2.15h15.35528c0.96105,3.698 4.29785,6.44999 8.29469,6.44999c4.7429,0 8.59999,-3.8571 8.59999,-8.59999zM107.49998,62.35009c-2.37145,0 -4.3,-1.92855 -4.3,-4.3c0,-2.37145 1.92855,-4.3 4.3,-4.3c2.37145,0 4.3,1.92855 4.3,4.3c0,2.37145 -1.92855,4.3 -4.3,4.3zM68.80002,107.80534v-4.6053c0,-2.37145 -1.92855,-4.3 -4.3,-4.3h-8.59999v-4.6053c3.698,-0.96105 6.44999,-4.3 6.44999,-8.29469c0,-4.7429 -3.8571,-8.59999 -8.59999,-8.59999c-4.7429,0 -8.59999,3.8571 -8.59999,8.59999c0,3.9947 2.752,7.33364 6.44999,8.29469v4.6053c0,2.37145 1.92855,4.3 4.3,4.3h8.59999v4.6053c-3.698,0.96105 -6.44999,4.3 -6.44999,8.29469c0,4.7429 3.8571,8.59999 8.59999,8.59999c4.7429,0 8.59999,-3.8571 8.59999,-8.59999c0,-3.9947 -2.752,-7.33364 -6.44999,-8.29469zM49.45004,86.00006c0,-2.37145 1.92855,-4.3 4.3,-4.3c2.37145,0 4.3,1.92855 4.3,4.3c0,2.37145 -1.92855,4.3 -4.3,4.3c-2.37145,0 -4.3,-1.92855 -4.3,-4.3zM66.65002,120.40003c-2.37145,0 -4.3,-1.92855 -4.3,-4.3c0,-2.37145 1.92855,-4.3 4.3,-4.3c2.37145,0 4.3,1.92855 4.3,4.3c0,2.37145 -1.92855,4.3 -4.3,4.3zM103.19998,90.30006h-4.3v-8.59999c0,-2.37145 -1.92855,-4.3 -4.3,-4.3h-21.49998v-6.44999c0,-1.1868 -0.96105,-2.15 -2.15,
+                        -2.15c-1.18895,0 -2.15,0.9632 -2.15,2.15v6.44999c0,2.37145 1.92855,4.3 4.3,4.3h21.49998v8.59999c0,2.37145 1.92855,4.3 4.3,4.3h4.3v6.44999c0,1.1868 0.96105,2.15 2.15,2.15c1.18895,0 2.15,-0.9632 2.15,-2.15v-6.44999c0,-2.37145 -1.92855,-4.3 -4.3,-4.3z"></path></g></g><path d="" fill="none"></path><path d="" fill="none"></path></g></g></svg>
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+            </svg>
+            <span class="ml-3 text-xl">KMIT Konnect</span>
+          </a>
+          <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+            <a class="mr-5 hover:text-gray-900">Home</a>
+            <a class="mr-5 hover:text-gray-900">Projects</a>
+            <a class="mr-5 hover:text-gray-900">Forum</a>
+            <a class="mr-5 hover:text-gray-900">Blog</a>
+          </nav>
+          <button class="inline-flex items-center bg-blue-200 border-0 py-1 px-3 focus:outline-none hover:bg-green-300 rounded text-base mt-4 md:mt-0">Login
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </button>
+        </div>
+      </header>
+
+
+
+      <section class="text-gray-700 body-font">
+        <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+          <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+            <img class="object-cover object-center rounded" alt="hero" src="https://source.unsplash.com/QckxruozjRg/720x600">
+          </div>
+          <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+            <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">  Join the largest student handled Tech-community in India
+              <br class="hidden lg:inline-block">Tech something
+            </h1>
+            <p class="mb-8 leading-relaxed">Best community for Hard core to simple coders.Here you can explore a wide range of Tech Projects and get doubts resolved from the Top 1% of Indian Coding Community!</p>
+            <div class="flex justify-center">
+              <button class="inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg">Login</button>
+              <button class="ml-4 inline-flex text-gray-700 bg-gray-200 border-0 py-2 px-6 focus:outline-none hover:bg-gray-300 rounded text-lg">Join now</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="text-gray-700 body-font">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-col text-center w-full mb-12">
+            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Information is the key</h1>
+            <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Tech evolves to the better daily.You may hardly find time to get yourself updated. Enroll for the newsletter to keep you notified with what's new in Tech.</p>
+          </div>
+          <div class="flex lg:w-2/3 w-full sm:flex-row flex-col mx-auto px-8 sm:px-0">
+            <input class="flex-grow w-full bg-gray-100 rounded border border-gray-400 focus:outline-none focus:border-teal-500 text-base px-4 py-2 mr-4 mb-4 sm:mb-0" placeholder="Full Name" type="text">
+            <input class="flex-grow w-full bg-gray-100 rounded border border-gray-400 focus:outline-none focus:border-teal-500 text-base px-4 py-2 mr-4 mb-4 sm:mb-0" placeholder="Email" type="email">
+            <button class="text-white bg-teal-500 border-0 py-2 px-8 focus:outline-none hover:bg-teal-600 rounded text-lg">Enroll</button>
+          </div>
+        </div>
+      </section>
+
+
+
+      <section class="text-gray-700 body-font">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-wrap -m-4 text-center">
+            <div class="p-4 sm:w-1/4 w-1/2">
+              <h2 class="title-font font-medium sm:text-4xl text-3xl text-gray-900">3.8K</h2>
+              <p class="leading-relaxed">Users</p>
+            </div>
+            <div class="p-4 sm:w-1/4 w-1/2">
+              <h2 class="title-font font-medium sm:text-4xl text-3xl text-gray-900">2.6K</h2>
+              <p class="leading-relaxed">Subscribes</p>
+            </div>
+            <div class="p-4 sm:w-1/4 w-1/2">
+              <h2 class="title-font font-medium sm:text-4xl text-3xl text-gray-900">350</h2>
+              <p class="leading-relaxed">Blogs</p>
+            </div>
+            <div class="p-4 sm:w-1/4 w-1/2">
+              <h2 class="title-font font-medium sm:text-4xl text-3xl text-gray-900">47</h2>
+              <p class="leading-relaxed">Projects</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+      <section class="text-gray-700 body-font">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="text-center mb-20">
+            <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4">Benifits of being a part of the community</h1>
+            <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">We are a student run coding community. You can find about few ideas in the forum. You get mentored by the top coders. </p>
+            <div class="flex mt-6 justify-center">
+              <div class="w-16 h-1 rounded-full bg-teal-500 inline-flex"></div>
+            </div>
+          </div>
+          <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
+            <div class="p-4 md:w-1/3 md:mb-0 mb-6 flex flex-col text-center items-center">
+              <div class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-teal-100 text-teal-500 mb-5 flex-shrink-0">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10" viewBox="0 0 24 24">
+                  <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                </svg>
+              </div>
+              <div class="flex-grow">
+                <h2 class="text-gray-900 text-lg title-font font-medium mb-3">Shoot up your codes</h2>
+                <p class="leading-relaxed text-base">Our coding forums are the best place you can put your codes and get them improvised by your co-developers.you have access to the list of people who viewed your code and made any changes.</p>
+                <a class="mt-3 text-teal-500 inline-flex items-center">Learn More
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="p-4 md:w-1/3 md:mb-0 mb-6 flex flex-col text-center items-center">
+              <div class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-teal-100 text-teal-500 mb-5 flex-shrink-0">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10" viewBox="0 0 24 24">
+                  <circle cx="6" cy="6" r="3"></circle>
+                  <circle cx="6" cy="18" r="3"></circle>
+                  <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
+                </svg>
+              </div>
+              <div class="flex-grow">
+                <h2 class="text-gray-900 text-lg title-font font-medium mb-3">Techknow</h2>
+                <p class="leading-relaxed text-base">The blog includes various developers and Tech geeks writing about different types of tech and their opinions</p>
+                <a class="mt-3 text-teal-500 inline-flex items-center">Learn More
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="p-4 md:w-1/3 md:mb-0 mb-6 flex flex-col text-center items-center">
+              <div class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-teal-100 text-teal-500 mb-5 flex-shrink-0">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10" viewBox="0 0 24 24">
+                  <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                  <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+              </div>
+              <div class="flex-grow">
+                <h2 class="text-gray-900 text-lg title-font font-medium mb-3">Developers Team</h2>
+                <p class="leading-relaxed text-base">The developers Team includes people from the top 1% of Indian coding community.you can explore various projects and can contribute to them or get some help for your project.</p>
+                <a class="mt-3 text-teal-500 inline-flex items-center">Learn More
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <button class="flex mx-auto mt-16 text-white bg-teal-500 border-0 py-2 px-8 focus:outline-none hover:bg-teal-600 rounded text-lg">Join Now</button>
+        </div>
+      </section>
+
+
+
+      <section class="text-gray-700 body-font">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-wrap -m-4">
+            <div class="p-4 lg:w-1/3">
+              <div class="h-full bg-gray-200 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
+                <h2 class="tracking-widest text-xs title-font font-medium text-gray-500 mb-1">CODING</h2>
+                <h1 class="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">Why you'll get stuck while coding</h1>
+                <p class="leading-relaxed mb-3">How do you know? If you are new to coding,this list will help you.</p>
+                <a class="text-green-500 inline-flex items-center">Learn More
+                  <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 12h14"></path>
+                    <path d="M12 5l7 7-7 7"></path>
+                  </svg>
+                </a>
+                <div class="text-center mt-2 leading-none flex justify-center absolute bottom-0 left-0 w-full py-4">
+                  <span class="text-gray-600 mr-3 inline-flex items-center leading-none text-sm pr-3 py-1 border-r-2 border-gray-300">
+                    <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                      <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                      <circle cx="12" cy="12" r="3"></circle>
+                    </svg>1.2K
+                  </span>
+                  <span class="text-gray-600 inline-flex items-center leading-none text-sm">
+                    <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                      <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                    </svg>6
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="p-4 lg:w-1/3">
+              <div class="h-full bg-gray-200 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
+                <h2 class="tracking-widest text-xs title-font font-medium text-gray-500 mb-1">SELF-DRIVING CARS</h2>
+                <h1 class="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">Tesla clutches out to level 5</h1>
+                <p class="leading-relaxed mb-3">Tesla has been working a new tracking based implementation for the last 2 years.Find out more about it.</p>
+                <a class="text-green-500 inline-flex items-center">Learn More
+                  <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 12h14"></path>
+                    <path d="M12 5l7 7-7 7"></path>
+                  </svg>
+                </a>
+                <div class="text-center mt-2 leading-none flex justify-center absolute bottom-0 left-0 w-full py-4">
+                  <span class="text-gray-600 mr-3 inline-flex items-center leading-none text-sm pr-3 py-1 border-r-2 border-gray-300">
+                    <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                      <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                      <circle cx="12" cy="12" r="3"></circle>
+                    </svg>1.2K
+                  </span>
+                  <span class="text-gray-600 inline-flex items-center leading-none text-sm">
+                    <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                      <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                    </svg>6
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="p-4 lg:w-1/3">
+              <div class="h-full bg-gray-200 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
+                <h2 class="tracking-widest text-xs title-font font-medium text-gray-500 mb-1">PRIVACY</h2>
+                <h1 class="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">Incognito mode won't keep your browsing private.Do this instead</h1>
+                <p class="leading-relaxed mb-3">Browser compartmentalisation can help you escape the clutches of the data gathering machine.Read the article to know more.</p>
+                <a class="text-green-500 inline-flex items-center">Learn More
+                  <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 12h14"></path>
+                    <path d="M12 5l7 7-7 7"></path>
+                  </svg>
+                </a>
+                <div class="text-center mt-2 leading-none flex justify-center absolute bottom-0 left-0 w-full py-4">
+                  <span class="text-gray-600 mr-3 inline-flex items-center leading-none text-sm pr-3 py-1 border-r-2 border-gray-300">
+                    <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                      <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                      <circle cx="12" cy="12" r="3"></circle>
+                    </svg>1.2K
+                  </span>
+                  <span class="text-gray-600 inline-flex items-center leading-none text-sm">
+                    <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                      <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                    </svg>6
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+
+      <section class="text-gray-700 body-font">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="inline-block w-8 h-8 text-gray-400 mb-8" viewBox="0 0 975.036 975.036">
+              <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
+            </svg>
+            <p class="leading-relaxed text-lg">"KMIT Konnect has been very instumental in helping me hone my skills and transition into a new career as a web/python developer. Being able to learn Python tricks from Aluminis has taught me about all of the endless possibilities and opportunities for me in the tech world." </p>
+            <span class="inline-block h-1 w-10 rounded bg-green-500 mt-8 mb-6"></span>
+            <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">Freshie</h2>
+            <p class="text-gray-500">First Year Student</p>
+          </div>
+        </div>
+      </section>
+
+
+
+      <section class="text-gray-700 body-font">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-col text-center w-full mb-20">
+            <h1 class="text-2xl font-medium title-font mb-4 text-gray-900 tracking-widest">OUR TEAM</h1>
+            <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Whatever it took,Our team aways kept learning and improving day by day.Every problm they faced gave them a really good experience on how to tackle them.</p>
+          </div>
+          <div class="flex flex-wrap -m-4">
+            <div class="p-4 lg:w-1/2">
+              <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+                <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="https://dummyimage.com/200x200">
+                <div class="flex-grow sm:pl-8">
+                  <h2 class="title-font font-medium text-lg text-gray-900">James Craig</h2>
+                  <h3 class="text-gray-500 mb-3">UI Developer</h3>
+                  <p class="mb-4">Designing the webpages and improving the previously designed ones.</p>
+                  <span class="inline-flex">
+                    <a class="text-gray-500">
+                      <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                      </svg>
+                    </a>
+                    <a class="ml-2 text-gray-500">
+                      <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                      </svg>
+                    </a>
+                    <a class="ml-2 text-gray-500">
+                      <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                      </svg>
+                    </a>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="p-4 lg:w-1/2">
+              <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+                <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="https://dummyimage.com/201x201">
+                <div class="flex-grow sm:pl-8">
+                  <h2 class="title-font font-medium text-lg text-gray-900">Alexander</h2>
+                  <h3 class="text-gray-500 mb-3">Developer</h3>
+                  <p class="mb-4">He played a key role by contributing code to a lot of webpages in this site.</p>
+                  <span class="inline-flex">
+                    <a class="text-gray-500">
+                      <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                      </svg>
+                    </a>
+                    <a class="ml-2 text-gray-500">
+                      <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                      </svg>
+                    </a>
+                    <a class="ml-2 text-gray-500">
+                      <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                      </svg>
+                    </a>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="p-4 lg:w-1/2">
+              <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+                <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="https://dummyimage.com/204x204">
+                <div class="flex-grow sm:pl-8">
+                  <h2 class="title-font font-medium text-lg text-gray-900">Neil bhai</h2>
+                  <h3 class="text-gray-500 mb-3">In-Field Expert developer</h3>
+                  <p class="mb-4">He is one of the expert faculties who is currently mentoring a lot of students in their projects and often answers doubts in the forum</p>
+                  <span class="inline-flex">
+                    <a class="text-gray-500">
+                      <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                      </svg>
+                    </a>
+                    <a class="ml-2 text-gray-500">
+                      <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                      </svg>
+                    </a>
+                    <a class="ml-2 text-gray-500">
+                      <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                      </svg>
+                    </a>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="p-4 lg:w-1/2">
+              <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+                <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="https://dummyimage.com/206x206">
+                <div class="flex-grow sm:pl-8">
+                  <h2 class="title-font font-medium text-lg text-gray-900">Waren Gates</h2>
+                  <h3 class="text-gray-500 mb-3">Blog writer</h3>
+                  <p class="mb-4">He has an imeccable knowledge in Technology.He has been writing about tech in different pages,he reviews stuff and puts out his opinion about a variety of news in the tech industry.</p>
+                  <span class="inline-flex">
+                    <a class="text-gray-500">
+                      <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                      </svg>
+                    </a>
+                    <a class="ml-2 text-gray-500">
+                      <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                      </svg>
+                    </a>
+                    <a class="ml-2 text-gray-500">
+                      <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                      </svg>
+                    </a>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+      <section class="text-gray-700 body-font relative">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-col text-center w-full mb-12">
+            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Contact Us</h1>
+            <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Write to us about your experiences,impressions about the platfom.Also write to us if you want to get featured in any of our blog posts.</p>
+          </div>
+          <div class="lg:w-1/2 md:w-2/3 mx-auto">
+            <div class="flex flex-wrap -m-2">
+              <div class="p-2 w-1/2">
+                <input class="w-full bg-gray-100 rounded border border-gray-400 focus:outline-none focus:border-green-500 text-base px-4 py-2" placeholder="Name" type="text">
+              </div>
+              <div class="p-2 w-1/2">
+                <input class="w-full bg-gray-100 rounded border border-gray-400 focus:outline-none focus:border-green-500 text-base px-4 py-2" placeholder="Email" type="email">
+              </div>
+              <div class="p-2 w-full">
+                <textarea class="w-full bg-gray-100 rounded border border-gray-400 focus:outline-none h-48 focus:border-green-500 text-base px-4 py-2 resize-none block" placeholder="Message"></textarea>
+              </div>
+              <div class="p-2 w-full">
+                <button class="flex mx-auto text-white bg-green-500 border-0 py-2 px-8 focus:outline-none hover:bg-green-600 rounded text-lg">Send</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+      <footer class="text-gray-700 body-font">
+        <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-no-wrap flex-wrap flex-col">
+          <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
+            <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                width="64" height="64"
+                viewBox="0 0 172 172"
+                style=" fill:#000000;"><g transform=""><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><path d="M86,172c-47.49649,0 -86,-38.50351 -86,-86v0c0,-47.49649 38.50351,-86 86,-86h0c47.49649,0 86,38.50351 86,86v0c0,47.49649 -38.50351,86 -86,86z" fill="#d2bd27"></path>
+                    <g><path d="M80.16061,142.85246c3.21855,-3.139 8.46024,-3.139 11.67879,0c3.4873,3.4013 8.25384,5.49754 13.51059,5.49754c8.42369,0 15.57028,-5.39219 18.22768,-12.90429c0.0172,0 0.03225,0.0043 0.0473,0.0043c5.34274,0 9.67499,-4.33225 9.67499,-9.67499c0,-1.30075 -0.26445,-2.537 -0.731,-3.6679c6.58544,-1.60605 11.48099,-7.52714 11.48099,-14.60709c0,-2.62085 -0.67295,-5.08474 -1.85115,-7.23259c3.7238,-2.7391 6.15114,-7.14014 6.15114,-12.11739c0,-7.14659 -4.98585,-13.11499 -11.66374,-14.65439c1.89845,-2.09625 3.06375,-4.86975 3.06375,-7.92059c0,-6.53169 -5.29329,-11.82499 -11.82499,-11.82499c-0.0774,0 -0.1548,0.01075 -0.2322,0.01075c1.1696,-2.279 1.6383,-4.9794 1.0578,-7.82599c-0.93095,-4.558 -4.63325,-8.24524 -9.19554,-9.14824c-2.84875,-0.5633 -5.54914,-0.086 -7.82384,1.09865c0.18705,-1.80815 0.01075,-3.72165 -0.7095,-5.70394c-1.59315,-4.386 -5.52549,-7.69699 -10.14154,-8.38284c-4.1065,-0.6106 -7.91844,0.71595 -10.65539,3.2035c-2.38005,2.1629 -6.07159,2.1629 -8.45164,0c-2.73695,-2.48755 -6.54674,-3.8141 -10.65539,-3.2035c-4.61605,0.68585 -8.54839,3.99685 -10.14154,8.38284c-0.72025,1.9823 -0.8944,3.8958 -0.7095,5.70394c-2.2747,-1.1825 -4.9751,-1.66195 -7.82384,-1.09865c-4.56445,0.90515 -8.26674,4.59025 -9.19554,9.14824c-0.5805,2.84875 -0.1118,5.54699 1.0578,7.82599c-0.07525,0 -0.15265,-0.01075 -0.23005,-0.01075c-6.53169,0 -11.82499,5.29329 -11.82499,11.82499c0,3.05085 1.1653,5.82434 3.06375,7.92059c-6.67789,1.5394 -11.66374,7.50779 -11.66374,14.65439c0,4.97725 2.42735,9.37829 6.15114,12.11739c-1.1782,2.14785 -1.85115,4.61175 -1.85115,7.23259c0,7.07994 4.89555,13.00104 11.48099,14.60709c-0.46655,1.1309 -0.731,2.36715 -0.731,3.6679c0,5.34274 4.33225,9.67499 9.67499,9.67499c0.0172,0 0.03225,-0.0043 0.0473,-0.0043c2.6574,7.51209 9.80399,12.90429 18.22768,12.90429c5.25674,0 10.02329,-2.09625 13.51059,-5.49754z" fill="#c2cde7"></path>
+                        <path d="M148.34994,88.15006c0,-7.14659 -4.98585,-13.11499 -11.66374,-14.65439c1.89845,-2.09625 3.06375,-4.86975 3.06375,-7.92059c0,-6.53169 -5.29329,-11.82499 -11.82499,-11.82499c-0.0774,0 -0.1548,0.01075 -0.2322,0.01075c1.1696,-2.279 1.6383,-4.9794 1.0578,-7.82599c-0.93095,-4.558 -4.63325,-8.24524 -9.19554,-9.14824c-2.84875,-0.5633 -5.54914,-0.08385 -7.82384,1.09865c0.18705,-1.80815 0.01075,-3.72165 -0.7095,-5.70394c-1.59315,-4.386 -5.52549,-7.69699 -10.14154,-8.38284c-4.1065,-0.6106 -7.91844,0.71595 -10.65539,3.2035c-1.18895,1.08145 -2.70685,1.6211 -4.22475,1.6211v111.87299c2.1156,0 4.2312,0.78475 5.83939,2.35425c3.4873,3.40345 8.25384,5.49969 13.51059,5.49969c8.42369,0 15.57028,-5.39219 18.22768,-12.90429c0.0172,0 0.03225,0.0043 0.0473,0.0043c5.34274,0 9.67499,-4.33225 9.67499,-9.67499c0,-1.30075 -0.26445,-2.537 -0.731,-3.6679c6.58544,-1.60605 11.48099,-7.52714 11.48099,-14.60709c0,-2.62085 -0.67295,-5.08474 -1.85115,-7.23259c3.7238,-2.7391 6.15114,-7.14014 6.15114,-12.11739z" fill="#b5c4e0"></path><path d="M62.35002,51.6001c-3.56223,0 -6.44999,2.88776 -6.44999,6.44999c0,3.56223 2.88776,6.44999 6.44999,6.44999c3.56223,0 6.44999,-2.88776 6.44999,-6.44999c0,-3.56223 -2.88776,-6.44999 -6.44999,-6.44999zM107.49998,51.6001c-3.56223,0 -6.44999,2.88776 -6.44999,6.44999c0,3.56223 2.88776,6.44999 6.44999,6.44999c3.56223,0 6.44999,-2.88776 6.44999,-6.44999c0,-3.56223 -2.88776,-6.44999 -6.44999,-6.44999zM118.24997,79.55007c-3.56223,0 -6.44999,2.88776 -6.44999,6.44999c0,3.56223 2.88776,6.44999 6.44999,6.44999c3.56223,0 6.44999,-2.88776 6.44999,-6.44999c0,-3.56223 -2.88776,-6.44999 -6.44999,-6.44999zM105.34998,109.65004c-3.56223,0 -6.44999,2.88776 -6.44999,6.44999c0,3.56223 2.88776,6.44999 6.44999,6.44999c3.56223,0 6.44999,-2.88776 6.44999,-6.44999c0,-3.56223 -2.88776,-6.44999 -6.44999,-6.44999zM66.65002,109.65004c-3.56223,0 -6.44999,2.88776 -6.44999,6.44999c0,3.56223 2.88776,6.44999 6.44999,6.44999c3.56223,0 6.44999,-2.88776 6.44999,-6.44999c0,-3.56223 -2.88776,-6.44999 -6.44999,-6.44999zM53.75003,79.55007c-3.56223,0 -6.44999,2.88776 -6.44999,6.44999c0,3.56223 2.88776,6.44999 6.44999,6.44999c3.56223,0 6.44999,-2.88776 6.44999,-6.44999c0,-3.56223 -2.88776,-6.44999 -6.44999,-6.44999z" fill="#f9e3ae"></path>
+                        <g fill="#8d6c9f"><path d="M83.85,49.4501h4.3c1.18895,0 2.15,-0.9632 2.15,-2.15c0,-1.1868 -0.96105,-2.15 -2.15,-2.15h-4.3c-1.18895,0 -2.15,0.9632 -2.15,2.15c0,1.1868 0.96105,2.15 2.15,2.15zM83.85,38.70011h4.3c1.18895,0 2.15,-0.9632 2.15,-2.15c0,-1.1868 -0.96105,-2.15 -2.15,-2.15h-4.3c-1.18895,0 -2.15,0.9632 -2.15,2.15c0,1.1868 0.96105,2.15 2.15,2.15zM88.15,70.95008c1.18895,0 2.15,-0.9632 2.15,-2.15c0,-1.1868 -0.96105,-2.15 -2.15,-2.15h-4.3c-1.18895,0 -2.15,0.9632 -2.15,2.15c0,1.1868 0.96105,2.15 2.15,2.15zM88.15,88.15006h-4.3c-1.18895,0 -2.15,0.9632 -2.15,2.15c0,1.1868 0.96105,2.15 2.15,2.15h4.3c1.18895,0 2.15,-0.9632 2.15,-2.15c0,-1.1868 -0.96105,-2.15 -2.15,-2.15zM88.15,98.90005h-4.3c-1.18895,0 -2.15,0.9632 -2.15,2.15c0,1.1868 0.96105,2.15 2.15,2.15h4.3c1.18895,0 2.15,-0.9632 2.15,-2.15c0,-1.1868 -0.96105,-2.15 -2.15,-2.15zM88.15,109.65004h-4.3c-1.18895,0 -2.15,0.9632 -2.15,2.15c0,1.1868 0.96105,2.15 2.15,2.15h4.3c1.18895,0 2.15,-0.9632 2.15,-2.15c0,-1.1868 -0.96105,-2.15 -2.15,-2.15zM88.15,120.40003h-4.3c-1.18895,0 -2.15,0.9632 -2.15,2.15c0,1.1868 0.96105,2.15 2.15,2.15h4.3c1.18895,0 2.15,-0.9632 2.15,-2.15c0,-1.1868 -0.96105,-2.15 -2.15,-2.15zM88.15,131.15002h-4.3c-1.18895,0 -2.15,0.9632 -2.15,2.15c0,1.1868 0.96105,2.15 2.15,2.15h4.3c1.18895,0 2.15,-0.9632 2.15,-2.15c0,-1.1868 -0.96105,-2.15 -2.15,-2.15z"></path><path d="M145.96344,104.7846c-0.0602,-0.3827 -0.13115,-0.7611 -0.2193,-1.1395c-0.0688,-0.30315 -0.14405,-0.60415 -0.2279,-0.903c-0.08815,-0.3053 -0.19135,-0.60415 -0.2967,-0.90515c-0.1118,-0.3225 -0.21715,-0.64715 -0.3483,-0.9632c-0.00215,-0.00645 -0.0043,-0.0129 -0.00645,-0.01935c3.5561,-3.2379 5.63514,-7.86899 5.63514,-12.70434c0,-5.83079 -2.90035,-11.01874 -7.46479,-14.14269c-0.04515,-0.03655 -0.0688,-0.086 -0.1161,-0.11825c-0.08385,-0.0559 -0.1763,-0.0989 -0.26015,-0.15265c-0.2752,-0.17845 -0.5633,-0.33755 -0.84925,-0.4988c-0.3999,-0.2279 -0.80625,-0.44075 -1.2212,-0.6321c-0.15695,-0.0731 -0.2967,-0.1677 -0.4558,-0.2365c1.15025,-2.06615 1.7673,-4.3989 1.7673,-6.79399c0,-6.75529 -4.816,-12.40549 -11.19719,-13.69764c0.5375,-2.05755 0.5934,-4.21615 0.15265,-6.37044c-1.10295,-5.40724 -5.47604,-9.75884 -10.88329,-10.82954c-0.9073,-0.17845 -1.8146,-0.25585 -2.71545,-0.26015c-0.0301,
+                            -0.00215 -0.05375,-0.0172 -0.0817,-0.0172c-0.04515,0 -0.086,0.0086 -0.13115,0.0086c-0.59555,0.0043 -1.1868,0.043 -1.7716,0.12255c-0.1677,0.02365 -0.3311,0.0645 -0.49665,0.0946c-0.31175,0.05375 -0.6235,0.0989 -0.9288,0.17415c-0.13545,-1.1352 -0.4042,-2.25535 -0.8041,-3.354c-1.86835,-5.14709 -6.51879,-8.98269 -11.84434,-9.77604c-4.53435,-0.6751 -9.06009,0.688 -12.41624,3.73885c-1.5566,1.41685 -3.999,1.419 -5.55989,0c-3.3583,-3.0487 -7.88189,-4.4161 -12.41839,-3.7367c-5.32554,0.79335 -9.97599,4.62895 -11.84434,9.77389c-0.40205,1.09865 -0.66865,2.22095 -0.8041,3.35615c-1.98015,-0.48805 -4.05275,-0.5332 -6.12749,-0.1247c-5.40939,1.0707 -9.78249,5.42229 -10.88329,10.82739c-0.44075,2.1543 -0.38485,4.31505 0.15265,6.37259c-6.38119,1.29215 -11.19719,6.94234 -11.19719,13.69764c0,2.3951 0.61705,4.72785 1.76945,6.79184c-0.00645,0.00215 -0.01075,0.00645 -0.0172,0.0086c-0.66865,0.29025 -1.31365,0.62995 -1.94145,1.0062c-0.15695,0.09245 -0.31175,0.18275 -0.46655,0.2795c-0.57405,0.36765 -1.1352,0.7611 -1.66625,1.1997c-0.2236,0.18275 -0.4257,0.38485 -0.63855,0.57835c-0.2021,0.18275 -0.41065,0.35475 -0.60415,0.54825c-0.0301,0.0301 -0.04085,0.0731 -0.0688,0.10535c-3.0874,3.12395 -4.9665,7.37879 -4.9665,12.05719c0,4.83535 2.07905,9.46644 5.63514,12.70864c-0.01075,0.0258 -0.0172,0.0516 -0.02795,0.0774c-0.0774,0.18705 -0.13545,0.38055 -0.2064,0.5719c-0.17845,0.47945 -0.3354,0.9632 -0.47085,1.45555c-0.0344,0.1247 -0.08815,0.24295 -0.11825,0.36765c-0.01075,0.043 0.00215,0.0817 -0.00645,0.1247c-0.32035,1.3201 -0.50525,2.67675 -0.50525,4.04415c0,7.18529 4.4118,13.48694 10.96929,16.01963c-0.0043,0.01935 -0.00215,0.0387 -0.00645,0.0559c-0.13545,0.7138 -0.21285,1.44695 -0.21285,2.19945c0,5.97699 4.45695,10.93274 10.36299,11.70889c3.37335,7.84104 11.13054,13.01609 19.73698,13.01609c5.64159,0 10.97359,-2.16935 15.01128,-6.10814c2.39295,-2.3349 6.28229,-2.3349 8.67524,0c4.03985,3.9388 9.37184,6.10814 15.01343,6.10814c8.59569,0 16.34858,-5.16214 19.72408,-12.98814c5.83939,-0.7181 10.37589,-5.70609 10.37589,-11.73684c0,-0.7611 -0.0731,-1.5136 -0.2193,-2.25535c6.55749,-2.5327 10.96929,-8.83434 10.96929,-16.01963c0,-0.6579 -0.04945,-1.31365 -0.1247,-1.96725c-0.02795,-0.25155 -0.0731,-0.4988 -0.1118,-0.7482zM62.35002,53.7501c2.37145,
+                            0 4.3,1.92855 4.3,4.3c0,2.37145 -1.92855,4.3 -4.3,4.3c-2.37145,0 -4.3,-1.92855 -4.3,-4.3c0,-2.37145 1.92855,-4.3 4.3,-4.3zM105.34998,120.40003c-2.37145,0 -4.3,-1.92855 -4.3,-4.3c0,-2.37145 1.92855,-4.3 4.3,-4.3c2.37145,0 4.3,1.92855 4.3,4.3c0,2.37145 -1.92855,4.3 -4.3,4.3zM132.06155,120.01733c-0.6106,0.14835 -1.1223,0.5547 -1.40825,1.1137c-0.2838,0.559 -0.31175,1.2126 -0.07095,1.7931c0.37625,0.91805 0.5676,1.87695 0.5676,2.8509c0,4.1495 -3.37335,7.52499 -7.43684,7.52499h-0.00215c-0.9847,-0.05375 -1.8404,0.5246 -2.16075,1.42975c-2.18655,6.17479 -7.68194,10.49199 -14.05024,11.30254v-21.63758c3.698,-0.96105 6.44999,-4.3 6.44999,-8.29469c0,-4.7429 -3.8571,-8.59999 -8.59999,-8.59999c-4.7429,0 -8.59999,3.8571 -8.59999,8.59999c0,3.9947 2.752,7.33364 6.44999,8.29469v21.65693c-3.70445,-0.46225 -7.14659,-2.09195 -9.85989,-4.7386c-2.02315,-1.9737 -4.6827,-2.9627 -7.34009,-2.9627c-2.6574,0 -5.31694,0.98685 -7.34009,2.9627c-2.71115,2.6445 -6.15544,4.27635 -9.85989,4.7386v-14.90164c0,-1.1868 -0.96105,-2.15 -2.15,-2.15c-1.18895,0 -2.15,0.9632 -2.15,2.15v14.88014c-6.36829,-0.81055 -11.86584,-5.12774 -14.05024,-11.30254c-0.3182,-0.8987 -1.2083,-1.46845 -2.14785,-1.4276c-4.1151,-0.04085 -7.45189,-3.4013 -7.45189,-7.52499c0,-0.50095 0.05375,-0.99115 0.14835,-1.46415c0.0946,-0.46655 0.2322,-0.92665 0.4171,-1.376c1.12445,-2.7434 3.81625,-4.68485 6.95954,-4.68485c0.6106,0 1.2126,0.0731 1.79525,0.215c1.1567,0.2838 2.3177,-0.4214 2.59935,-1.5738c0.2838,-1.15455 -0.41925,-2.3177 -1.5738,-2.6015c-0.9159,-0.22575 -1.8662,-0.3397 -2.8208,-0.3397c-4.2097,0 -7.90554,2.2188 -9.99964,5.54269c-4.9364,-1.88985 -8.27534,-6.59404 -8.27534,-11.99269c0,-1.07715 0.13545,-2.14785 0.40205,-3.1863c0.13545,-0.53535 0.30745,-1.05995 0.50955,-1.5695c0.09245,-0.23435 0.215,-0.45795 0.3225,-0.688c0.65575,-1.4018 1.53725,-2.6961 2.6617,-3.79475c0.8514,-0.82775 0.86645,-2.19085 0.0387,-3.0401c-0.8256,-0.8471 -2.19085,-0.86645 -3.0401,-0.0387c-0.58695,0.5719 -1.1266,1.1825 -1.6211,1.82535c-2.2833,-2.37575 -3.5733,-5.49324 -3.5733,-8.85799c0,-3.6593 1.5265,-6.98319 4.02695,-9.34819c0.1462,-0.13975 0.2967,-0.2752 0.44935,-0.40635c0.44505,-0.3827 0.90945,-0.7482 1.4104,-1.06855c0.0645,-0.043 0.1333,-0.07955 0.19995,-0.1204c1.18035,-0.72885 2.49185,
+                            -1.28785 3.91085,-1.61465c0.00645,-0.00215 0.0129,-0.00645 0.01935,-0.00645c0.93525,-0.21285 1.89845,-0.3354 2.88315,-0.3354c1.3072,0 2.59935,0.19565 3.83775,0.5805c1.13735,0.35905 2.3392,-0.28165 2.6918,-1.4147c0.3526,-1.13305 -0.28165,-2.3392 -1.4147,-2.6918c-1.65335,-0.51385 -3.37335,-0.774 -5.11484,-0.774c-0.83635,0 -1.6598,0.07955 -2.47465,0.19565c-1.16315,-1.6297 -1.82535,-3.55825 -1.82535,-5.57064c0,-5.33414 4.34085,-9.67499 9.64059,-9.67499c0.043,0.00215 0.1935,0.01075 0.23435,0.01075c0.6966,0 1.4577,-0.3741 1.85545,-1.01695c0.3999,-0.6407 0.43,-1.44265 0.086,-2.11345c-1.01695,-1.98015 -1.31365,-4.19895 -0.86215,-6.41559c0.7611,-3.7281 3.7797,-6.73164 7.50779,-7.46909c2.2274,-0.4386 4.4376,-0.129 6.41344,0.89655c0.29025,0.15265 0.6063,0.215 0.92235,0.22575v9.73734c-3.698,0.96105 -6.44999,4.3 -6.44999,8.29469c0,4.7429 3.8571,8.59999 8.59999,8.59999c4.7429,0 8.59999,-3.8571 8.59999,-8.59999c0,-3.9947 -2.752,-7.33364 -6.44999,-8.29469v-19.59078c1.67485,-2.2489 4.1753,-3.82915 6.93804,-4.23765c3.25295,-0.48375 6.49299,0.4902 8.89024,2.66815c3.182,2.8896 8.16354,2.8896 11.34554,0c2.39725,-2.17795 5.64159,-3.14975 8.89024,-2.666c3.7883,0.5633 7.09929,3.3067 8.43874,6.98964c0.4343,1.19755 0.645,2.43165 0.6407,3.67865c-2.1156,1.35235 -3.87,3.27875 -5.02884,5.65019c-0.5203,1.0664 -0.07955,2.35425 0.98685,2.87455c0.3053,0.14835 0.62565,0.2193 0.9417,0.2193c0.7955,0 1.5609,-0.4429 1.93285,-1.20615c0.94815,-1.9393 2.47465,-3.4357 4.3043,-4.36665c0.4601,-0.23435 0.9331,-0.43215 1.4147,-0.5891c0.02365,-0.0086 0.04515,-0.0172 0.0688,-0.0258c1.5566,-0.4945 3.21425,-0.5848 4.86975,-0.258c3.7281,0.73745 6.74669,3.741 7.50779,7.47124c0.4515,2.2145 0.15265,4.4333 -0.86215,6.41344c-0.344,0.6708 -0.3139,1.4749 0.086,2.11345c0.3999,0.64285 1.13305,1.0363 1.85545,1.01695l0.2064,-0.01075c5.33414,0 9.67499,4.34085 9.67499,9.67499c0,2.021 -0.66865,3.95815 -1.84255,5.59644c-2.87025,-0.4128 -5.83509,-0.13975 -8.56344,0.8944c-1.1094,0.4214 -1.66625,1.6641 -1.24485,2.7735c0.41925,1.11155 1.6641,1.6641 2.7735,1.247c2.3951,-0.9116 5.04389,-1.05565 7.53359,-0.47945c0.645,0.1505 1.26205,0.35905 1.85975,0.5977c0.16125,0.0645 0.3182,0.13545 0.47515,0.2064c0.473,0.2107 0.9288,0.44935 1.3674,0.7138c0.13545,0.0817 0.2752,
+                            0.15265 0.40635,0.23865c3.56685,2.31985 5.83509,6.30809 5.83509,10.78654c0,3.3669 -1.29215,6.48869 -3.5776,8.86874c-1.2298,-1.59315 -2.73265,-2.99495 -4.5021,-4.10435c-1.00405,-0.62565 -2.3306,-0.32465 -2.96485,0.68155c-0.62995,1.0062 -0.32465,2.33275 0.6794,2.9627c1.9006,1.18895 3.4185,2.8079 4.4591,4.68915c0.0086,0.0172 0.0086,0.03655 0.0172,0.05375c0.7783,1.419 1.2814,2.97775 1.48565,4.58165c0.06665,0.53105 0.1032,1.0707 0.1032,1.6168h-21.49998v-13.20529c3.698,-0.96105 6.44999,-4.3 6.44999,-8.29469c0,-4.7429 -3.8571,-8.59999 -8.59999,-8.59999c-4.7429,0 -8.59999,3.8571 -8.59999,8.59999c0,3.9947 2.752,7.33364 6.44999,8.29469v13.20529c0,2.37145 1.92855,4.3 4.3,4.3h20.76468c-1.41685,4.0119 -4.77085,7.15949 -9.10309,8.21729zM118.24997,90.30006c-2.37145,0 -4.3,-1.92855 -4.3,-4.3c0,-2.37145 1.92855,-4.3 4.3,-4.3c2.37145,0 4.3,1.92855 4.3,4.3c0,2.37145 -1.92855,4.3 -4.3,4.3z"></path><path d="M116.09997,58.05009c0,-4.7429 -3.8571,-8.59999 -8.59999,-8.59999c-3.99685,0 -7.33364,2.752 -8.29469,6.44999h-15.35528c-1.18895,0 -2.15,0.9632 -2.15,2.15c0,1.1868 0.96105,2.15 2.15,2.15h15.35528c0.96105,3.698 4.29785,6.44999 8.29469,6.44999c4.7429,0 8.59999,-3.8571 8.59999,-8.59999zM107.49998,62.35009c-2.37145,0 -4.3,-1.92855 -4.3,-4.3c0,-2.37145 1.92855,-4.3 4.3,-4.3c2.37145,0 4.3,1.92855 4.3,4.3c0,2.37145 -1.92855,4.3 -4.3,4.3zM68.80002,107.80534v-4.6053c0,-2.37145 -1.92855,-4.3 -4.3,-4.3h-8.59999v-4.6053c3.698,-0.96105 6.44999,-4.3 6.44999,-8.29469c0,-4.7429 -3.8571,-8.59999 -8.59999,-8.59999c-4.7429,0 -8.59999,3.8571 -8.59999,8.59999c0,3.9947 2.752,7.33364 6.44999,8.29469v4.6053c0,2.37145 1.92855,4.3 4.3,4.3h8.59999v4.6053c-3.698,0.96105 -6.44999,4.3 -6.44999,8.29469c0,4.7429 3.8571,8.59999 8.59999,8.59999c4.7429,0 8.59999,-3.8571 8.59999,-8.59999c0,-3.9947 -2.752,-7.33364 -6.44999,-8.29469zM49.45004,86.00006c0,-2.37145 1.92855,-4.3 4.3,-4.3c2.37145,0 4.3,1.92855 4.3,4.3c0,2.37145 -1.92855,4.3 -4.3,4.3c-2.37145,0 -4.3,-1.92855 -4.3,-4.3zM66.65002,120.40003c-2.37145,0 -4.3,-1.92855 -4.3,-4.3c0,-2.37145 1.92855,-4.3 4.3,-4.3c2.37145,0 4.3,1.92855 4.3,4.3c0,2.37145 -1.92855,4.3 -4.3,4.3zM103.19998,90.30006h-4.3v-8.59999c0,-2.37145 -1.92855,-4.3 -4.3,-4.3h-21.49998v-6.44999c0,-1.1868 -0.96105,-2.15 -2.15,
+                            -2.15c-1.18895,0 -2.15,0.9632 -2.15,2.15v6.44999c0,2.37145 1.92855,4.3 4.3,4.3h21.49998v8.59999c0,2.37145 1.92855,4.3 4.3,4.3h4.3v6.44999c0,1.1868 0.96105,2.15 2.15,2.15c1.18895,0 2.15,-0.9632 2.15,-2.15v-6.44999c0,-2.37145 -1.92855,-4.3 -4.3,-4.3z"></path></g></g><path d="" fill="none"></path><path d="" fill="none"></path></g></g></svg>
+                  <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                </svg>
+              <span class="ml-3 text-xl">KMITKonnect</span>
+            </a>
+            <p class="mt-2 text-sm text-gray-500">A Developer's paradise and medium of information exchange.</p>
+          </div>
+          <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
+              <nav class="list-none mb-10">
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">First Link</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Second Link</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Third Link</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
+                </li>
+              </nav>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
+              <nav class="list-none mb-10">
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">First Link</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Second Link</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Third Link</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
+                </li>
+              </nav>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
+              <nav class="list-none mb-10">
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">First Link</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Second Link</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Third Link</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
+                </li>
+              </nav>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
+              <nav class="list-none mb-10">
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">First Link</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Second Link</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Third Link</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
+                </li>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <div class="bg-gray-200">
+          <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+            <p class="text-gray-500 text-sm text-center sm:text-left">
+              <a href="https://twitter.com/KMITKonnect" rel="noopener noreferrer" class="text-gray-600 ml-1" target="_blank">@KMITKonnect</a>
+            </p>
+            <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+              <a class="text-gray-500">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                  <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                </svg>
+              </a>
+              <a class="ml-3 text-gray-500">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                  <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                </svg>
+              </a>
+              <a class="ml-3 text-gray-500">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                </svg>
+              </a>
+              <a class="ml-3 text-gray-500">
+                <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                  <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                  <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                </svg>
+              </a>
+            </span>
+          </div>
+        </div>
+      </footer>
+
+</body>
+</html>
